@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Expression Classifier </title>
+      <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+      <script src="index.js"></script>
+      <style>
+        body{
+          display: flex;
+        }
+        .hidden {
+          display: none;
+        }
+        body{
+          font-size: 32px;
+        }
+        .learning {
+          background: lightblue;
+        }
+        #face-container{
+          font-size: 200px;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="loading">Loading...</div>
+      <div id="contents" class="hidden">
+        <div><span id="status"></span></div>
+        <video width="500px" height="500px" autoplay id="video"></video>
+        <button id="smile">Smile</button>
+        <button id="cry">Cry</button>
+        <button id="go">GO!!</button>
+      </div>
+      <div id="face-container"></div>
+    </body>
+  </html>
