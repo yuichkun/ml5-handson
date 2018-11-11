@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Video Classifier</title>
+      <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+      <script src="index.js"></script>
+      <style>
+        .hidden {
+          display: none;
+        }
+        body{
+          font-size: 32px;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="loading">Loading...</div>
+      <div id="contents" class="hidden">
+        <video width="500px" height="500px" autoplay id="video"></video>
+        <ul id="results"></ul>
+      </div>
+    </body>
+  </html>
